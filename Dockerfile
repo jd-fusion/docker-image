@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-ARG  FUSION_CLI_VERSION=0.1.0-RELEASE
+ARG  FUSION_CLI_VERSION=0.1.1-RELEASE
 RUN  mkdir -p /opt/cli/ \
      && apk add --nocache wget \
 	 && wget http://jd-fusion-pub-storage.oss.cn-north-1.jcloudcs.com/releases/cli/jar/fusion-cli-${FUSION_CLI_VERSION}.jar \
